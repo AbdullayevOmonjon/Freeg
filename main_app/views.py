@@ -32,7 +32,6 @@ class Contact_view(View):
       email=request.POST.get('email'),
       tel=request.POST.get('tel'),
       media=request.POST.get('img'),
-      user=request.POST.get(request.user),
       uzi_malumot=request.POST.get('my_about')      
     )
     return redirect('contact')

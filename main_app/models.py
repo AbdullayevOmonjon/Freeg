@@ -13,7 +13,6 @@ class Profil(models.Model):
   email=models.CharField(max_length=30)
   tel=models.CharField(max_length=15,null=True,blank=True)
   uzi_malumot=models.CharField(max_length=30)
-  user=models.OneToOneField(User,on_delete=models.CASCADE)
   media=models.FileField(null=True,blank=True)
   def __str__(self) -> str:
     return self.name
